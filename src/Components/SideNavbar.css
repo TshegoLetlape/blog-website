@@ -1,0 +1,38 @@
+.side-navbar-container {
+  background-color: aliceblue;
+  width: 300px;
+  height: 160vh;
+  position: relative;
+  color: black;
+  transition: 0.4s;
+}
+
+.nav-upper,
+.nav-heading {
+  display: grid;
+}
+.nav-heading {
+  grid-template-columns: 2fr, 1fr;
+  grid-template-rows: 1fr;
+  height: 75px;
+}
+.nav-brand {
+  display: flex;
+}
+.nav-brand img {
+  width: 40px;
+  padding: 0 10px;
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  background: none;
+  background-color: none;
+  margin: auto -35px;
+  border: none;
+  padding: 20px;
+  border-radius: 90px;
+  height: 71px;
+  width: 74px;
+  cursor: pointer;
+}
