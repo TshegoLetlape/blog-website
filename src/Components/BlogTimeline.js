@@ -1,213 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./BlogTimeline.css";
 
 //CSS
-
-const styles = {
-  body: {
-    marginTop: "20px",
-  },
-  contentItem: {
-    padding: "30px 0",
-    backgroundColor: "#FFFFFF",
-  },
-  contentItemGrey: {
-    backgroundColor: "#F0F0F0",
-    padding: "50px 0",
-    height: "100%",
-  },
-  contentItemH2: {
-    fontWeight: "700",
-    fontSize: "35px",
-    lineHeight: "45px",
-    textTransform: "uppercase",
-    margin: "20px 0",
-  },
-  contentItemH3: {
-    fontWeight: "400",
-    fontSize: "20px",
-    color: "#555555",
-    margin: "10px 0 15px",
-    padding: "0",
-  },
-  contentHeadline: {
-    height: "1px",
-    textAlign: "center",
-    margin: "20px 0 70px",
-  },
-  contentHeadlineH2: {
-    backgroundColor: "#FFFFFF",
-    display: "inline-block",
-    margin: "-20px auto 0",
-    padding: "0 20px",
-  },
-  greyContentHeadlineH2: {
-    backgroundColor: "#F0F0F0",
-  },
-  contentHeadlineH3: {
-    fontSize: "14px",
-    color: "#AAAAAA",
-    display: "block",
-  },
-  blogTimelineH2: {
-    margin: "0 0 15px",
-  },
-  timeline: {
-    borderLeft: "3px solid #BBBBBB",
-    marginLeft: "110px",
-    paddingLeft: "25px",
-  },
-  blogPost: {
-    backgroundColor: "#FFFFFF",
-    padding: "10px 25px",
-    marginBottom: "60px",
-  },
-  dateXS: {
-    display: "none",
-  },
-  blogPostP: {
-    fontSize: "14px",
-    lineHeight: "23px",
-    textAlign: "justify",
-  },
-  blogPostImg: {
-    maxWidth: "200px",
-  },
-  blogPostImgPullRight: {
-    marginLeft: "15px",
-  },
-  blogPostImgPullLeft: {
-    marginRight: "15px",
-  },
-  blogPostBlogInfo: {
-    position: "absolute",
-    left: "0",
-    marginTop: "-10px",
-    width: "100px",
-    backgroundColor: "#FFFFFF",
-    boxShadow: "0 0 2px 1px rgba(0,0,0,0.2)",
-  },
-  blogPostBlogInfoAfter: {
-    width: "20px",
-    height: "20px",
-    position: "absolute",
-    right: "-37px",
-    top: "21px",
-    content: '""',
-    textAlign: "center",
-    borderRadius: "50%",
-    border: "5px solid #F0F0F0",
-  },
-  blogPostBlogInfoDate: {
-    backgroundColor: "#FFFFFF",
-    fontSize: "16px",
-  },
-  blogPostBlogInfoDateDiv: {
-    float: "left",
-    padding: "8px 0 0 12px",
-    fontWeight: "600",
-  },
-  blogPostBlogInfoDateDivNumber: {
-    padding: "4px 10px",
-    color: "#FFFFFF",
-    fontSize: "20px",
-  },
-  box: {
-    backgroundColor: "#FFFFFF",
-    padding: "10px 20px",
-    boxShadow: "0 1px 2px 0 rgba(0,0,0,0.1)",
-    marginBottom: "20px",
-  },
-  boxH3: {
-    margin: "30px 0 5px",
-    fontWeight: "bold",
-  },
-  boxUl: {
-    margin: "0",
-  },
-  boxUlLi: {
-    fontSize: "13px",
-    borderBottom: "1px dashed #DDDDDD",
-    padding: "10px 0",
-    fontWeight: "600",
-  },
-  boxUlLiLastChild: {
-    borderBottom: "0",
-  },
-  boxUlLiI: {
-    fontSize: "18px",
-    marginRight: "20px",
-  },
-  boxCategoriesUlLiI: {
-    color: "#BBBBBB",
-    position: "relative",
-    top: "2px",
-    width: "20px",
-  },
-  postsUlLiA: {
-    fontSize: "14px",
-    lineHeight: "23px",
-  },
-  postsUlLiAHover: {
-    color: "#333333",
-  },
-  postsUlLiDiv: {
-    fontSize: "13px",
-    color: "#999999",
-    fontWeight: "bold",
-    textAlign: "right",
-    marginTop: "5px",
-  },
-  boxPostsUlLiI: {
-    color: "#333333",
-    fontSize: "14px",
-    marginRight: "10px",
-  },
-  boxTagsUlBlogTagsLi: {
-    border: "0",
-  },
-  blogTagsLi: {
-    padding: "7px 0",
-  },
-  divUlBlogTagsLiI: {
-    color: "#FFFFFF",
-    position: "relative",
-    top: "1px",
-    fontSize: "14px",
-  },
-  "@media (max-width: 1024px)": {
-    ".blog-post p, .blog p, #comments .media p": {
-      textAlign: "left",
-    },
-  },
-  "@media (min-width: 768px) and (max-width: 991px)": {
-    ".overlay-wrapper .overlay a": {
-      fontSize: "15px",
-      width: "40px",
-      height: "40px",
-      paddingTop: "9px",
-    },
-    "#reference": {
-      minHeight: "430px",
-    },
-    "#blog-timeline h2, #blog-item h2": {
-      fontSize: "30px",
-    },
-    ".blog-post p img": {
-      maxWidth: "100%",
-      marginBottom: "10px",
-    },
-  },
-  "@media (max-width: 767px)": {
-    ".blog-post p img, .blog p img": {
-      maxWidth: "100%",
-      marginBottom: "10px",
-    },
-  },
-  "#blog-timeline .sidebar, #blog-item .sidebar": {
-    marginTop: "40px",
-  },
-};
 
 const BlogPost = ({
   avatarSrc,
@@ -257,7 +52,7 @@ const BlogTimeline = () => {
       month: "Dec",
       title: "Trendy Shweshwe Dresses",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis lacus ac semper viverra. Etiam consequat odio sollicitudin metus condimentum, quis hendrerit erat adipiscing...",
+        "As the wedding season approaches, the allure of SeTswana Shweshwe dresses takes center stage, captivating brides and wedding attendees alike with their vibrant elegance. Trending Shweshwe dresses for this celebratory season showcase a harmonious blend of traditional craftsmanship and contemporary design.As brides and wedding guests seek to honor tradition while making a fashionable statement, these trending Shweshwe dresses effortlessly capture the essence of the joyous union, symbolizing the fusion of heritage and contemporary style in the celebration of love.",
       blogImage: "images/SA-dresses.png",
       tags: ["book", "music", "nature", "read", "songs", "sunshine"],
       link: "#blogitem.html",
@@ -298,11 +93,7 @@ const BlogTimeline = () => {
   ];
 
   return (
-    <section
-      style={styles.body}
-      className="content-item grey"
-      id="blog-timeline"
-    >
+    <section className="content-item grey" id="blog-timeline">
       <div className="container">
         <div className="row">
           <div className="col-sm-8">
