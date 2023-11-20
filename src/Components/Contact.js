@@ -15,7 +15,67 @@ function Contact() {
             <div className="col-md-12">
               <div className="wrapper">
                 <div className="row mb-5">
-                  {/* ... Content for contact info boxes ... */}
+                  <div className="row mb-5">
+                    <div className="col-md-3">
+                      <div className="dbox w-100 text-center">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                          <span className="fa fa-map-marker"></span>
+                        </div>
+                        <div className="text">
+                          <p>
+                            <span>Address:</span> 198 West 21th Street,
+                            Rustenburg
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-3">
+                      <div className="dbox w-100 text-center">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                          <span className="fa fa-phone"></span>
+                        </div>
+                        <div className="text">
+                          <p>
+                            <span>Phone:</span>
+                            <a href="#">+14 589 489 448</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-3">
+                      <div className="dbox w-100 text-center">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                          <span className="fa fa-paper-plane"></span>
+                        </div>
+                        <div className="text">
+                          <p>
+                            <span>Email:</span>
+                            <a href="/cdn-cgi/l/email-protection#137a7d757c536a7c6661607a67763d707c7e">
+                              <span
+                                className="__cf_email__"
+                                data-cfemail="2a43444c456a53455f5859435e4f04494547"
+                              >
+                                [email protected]
+                              </span>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-3">
+                      <div className="dbox w-100 text-center">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                          <span className="fa fa-globe"></span>
+                        </div>
+                        <div className="text">
+                          <p>
+                            <span>Website</span>{" "}
+                            <a href="#">www.gwaoyarona.com</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="row no-gutters">
                   <div className="col-md-7">
@@ -32,7 +92,73 @@ function Contact() {
                         className="contactForm"
                       >
                         <div className="row">
-                          {/* ... Content for the contact form ... */}
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <label className="label" htmlFor="name">
+                                Full Name
+                              </label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                name="name"
+                                id="name"
+                                placeholder="Name"
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-group">
+                              <label className="label" htmlFor="email">
+                                Email Address
+                              </label>
+                              <input
+                                type="email"
+                                className="form-control"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-12">
+                            <div className="form-group">
+                              <label className="label" htmlFor="subject">
+                                Subject
+                              </label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                name="subject"
+                                id="subject"
+                                placeholder="Subject"
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-12">
+                            <div className="form-group">
+                              <label className="label" htmlFor="#">
+                                Message
+                              </label>
+                              <textarea
+                                name="message"
+                                className="form-control"
+                                id="message"
+                                cols="30"
+                                rows="4"
+                                placeholder="Message"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div className="col-md-12">
+                            <div className="form-group">
+                              <input
+                                type="submit"
+                                value="Send Message"
+                                className="btn btn-primary"
+                              />
+                              <div className="submitting"></div>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
