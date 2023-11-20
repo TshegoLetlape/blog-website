@@ -1,0 +1,96 @@
+/* Contact section */
+
+.ftco-section {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.ftco-section h2.heading-section {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.ftco-section .wrapper {
+  background-color: #ffffff;
+  padding: 30px 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Contact info boxes */
+
+.contact-wrap {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-wrap h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-wrap p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contact-wrap a {
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Contact form */
+
+.contactForm {
+  padding: 30px;
+}
+
+.contactForm .form-group {
+  margin-bottom: 15px;
+}
+
+.contactForm label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactForm input {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contactForm textarea {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  font-size: 14px;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  background-color: #333333;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Contact info image */
+
+.info-wrap {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}

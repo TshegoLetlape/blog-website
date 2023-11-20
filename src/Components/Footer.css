@@ -1,0 +1,84 @@
+.footer-clean {
+  background-color: #333333;
+  padding: 50px 0;
+}
+
+.footer-clean footer {
+  color: white;
+}
+
+.footer-clean .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-clean .item {
+  margin-bottom: 20px;
+}
+
+.footer-clean .item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-clean .item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-clean .item ul li {
+  margin-bottom: 5px;
+}
+
+.footer-clean .item ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-clean .subscription {
+  border-top: 1px solid #555555;
+  padding-top: 20px;
+}
+
+.footer-clean .subscription form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-clean .subscription .form-group {
+  margin-bottom: 10px;
+}
+
+.footer-clean .subscription input {
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+
+.footer-clean .subscription button {
+  padding: 10px 20px;
+  background-color: #333333;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-clean .social {
+  text-align: center;
+}
+
+.footer-clean .social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-clean .copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #aaaaaa;
+}
